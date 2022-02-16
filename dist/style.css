@@ -48,7 +48,12 @@ button, input {
 }
 
 header {
-  background-color: #546c83;
+  background: url(./images/kids-header.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #111;
+  background-blend-mode: overlay;
   color: #f2f2f2;
   text-align: center;
   padding-bottom: 4rem;
@@ -117,15 +122,17 @@ header > p {
   }
 }
 
-.box {
-  background: #546c83;
+.box > img {
+  background: transparent;
   width: 400px;
-  height: 220px;
+  height: 200px;
   margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 850px) {
-  .box {
+  .box > img {
     width: 180px;
     height: 80px;
     margin-top: 4rem;
@@ -220,6 +227,7 @@ footer > p {
     margin: .4rem 0;
   }
   nav {
+    display: none;
     background: #f2f2f2;
     color: #111;
     -webkit-box-orient: vertical;

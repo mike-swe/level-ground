@@ -3,7 +3,12 @@
 
 header
 {
-    background-color: hsl(209, 22%, 42%);
+    background: url(./images/kids-header.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #111;
+    background-blend-mode: overlay;
     color: #f2f2f2;
     text-align: center;
     padding-bottom: 4rem;
@@ -75,12 +80,14 @@ header > p
     }
 }
 
-.box
+.box > img
 {
-    background: hsl(209, 22%, 42%);
+    background: transparent;
     width: 400px;
-    height: 220px;
+    height: 200px;
     margin: 0 auto;
+    object-fit: cover;
+
 
     @media screen and (max-width: 850px) {
         width: 180px;
@@ -186,6 +193,7 @@ footer > p
 
     nav
     {
+        display: none;
         background: #f2f2f2;
         color: #111;
         flex-direction: column;
